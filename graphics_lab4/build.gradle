@@ -1,0 +1,26 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+mainClassName='graphics.Main'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+    maven {
+        url "https://simulation.tudelft.nl/maven/"
+    }
+    maven {
+        url "https://nexus.talanlabs.com/content/repositories/releases/"
+    }
+}
+
+dependencies {
+    compile 'java3d:j3dcore:1.5.2'
+    compile 'java3d:j3dutils:1.5.2'
+    compile 'javax.vecmath:vecmath:1.5.2'
+}
