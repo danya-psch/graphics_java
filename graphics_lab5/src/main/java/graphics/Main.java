@@ -143,7 +143,6 @@ public class Main extends JFrame {
 
     private void setFactoryElementsList() {
         nameMap = scene.getNamedObjects();
-//        printModelElementsList(nameMap);
         setFactoryInitialTransform();
 
         root.removeChild(nameMap.get(nameOfFactoryMeshGroup));
