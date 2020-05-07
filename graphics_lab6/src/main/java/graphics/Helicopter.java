@@ -152,13 +152,13 @@ public class Helicopter extends JFrame
         TransformGroup transformGroup = new TransformGroup();
         transformGroup.addChild(shape.cloneTree());
 
-        Alpha alphaRotation = new Alpha(Integer.MAX_VALUE, Alpha.INCREASING_ENABLE,0,0, rotateDuration,
+        Alpha alpha = new Alpha(Integer.MAX_VALUE, Alpha.INCREASING_ENABLE,0,0, rotateDuration,
                 0,0,0, 0,0);
-        RotationInterpolator rotationInterpolator = new RotationInterpolator(alphaRotation, transformGroup,
+        RotationInterpolator rotationInterpolator = new RotationInterpolator(alpha, transformGroup,
                 transform, (float) Math.PI * 2, 0.0f);
 
-        BoundingSphere bounds = new BoundingSphere(new Point3d(), Double.MAX_VALUE);
-        rotationInterpolator.setSchedulingBounds(bounds);
+        BoundingSphere bound = new BoundingSphere(new Point3d(), Double.MAX_VALUE);
+        rotationInterpolator.setSchedulingBounds(bound);
 
         transformGroup.setCapability(TransformGroup.ALLOW_TRANSFORM_WRITE);
         transformGroup.addChild(rotationInterpolator);
