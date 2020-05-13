@@ -140,7 +140,7 @@ public class Helicopter extends JFrame
         su.addBranchGraph(theScene);
     }
 
-
+	//com
     private void setAppearance(Color color, Shape3D shape) {
         Appearance app = new Appearance();
         Color3f color3f = new Color3f(color);
