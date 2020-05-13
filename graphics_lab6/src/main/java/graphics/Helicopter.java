@@ -147,7 +147,7 @@ public class Helicopter extends JFrame
         app.setMaterial(new Material(color3f, color3f, color3f, color3f, 150.0f));
         shape.setAppearance(app);
     }
-
+	//com
     private Node applyRotationForShape(Shape3D shape, Transform3D transform, int rotateDuration) {
         TransformGroup transformGroup = new TransformGroup();
         transformGroup.addChild(shape.cloneTree());
