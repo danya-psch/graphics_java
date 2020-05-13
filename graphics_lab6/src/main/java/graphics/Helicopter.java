@@ -135,7 +135,7 @@ public class Helicopter extends JFrame
         BoundingSphere bs = new BoundingSphere(new Point3d(0,0,-600), Double.MAX_VALUE);
         positionInterpolator.setSchedulingBounds(bs);
         sceneGroup.addChild(positionInterpolator);
-
+	//com
         theScene.compile();
         su.addBranchGraph(theScene);
     }
