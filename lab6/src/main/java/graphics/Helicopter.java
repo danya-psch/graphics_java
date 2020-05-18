@@ -9,7 +9,7 @@ import com.sun.j3d.loaders.*;
 import com.sun.j3d.loaders.objectfile.*;
 
 import java.awt.*;
-
+//
 public class Helicopter extends JFrame
 {
     private final String helicopterPath = "src/main/resources/helicopter.obj";
